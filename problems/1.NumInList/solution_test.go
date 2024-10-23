@@ -1,6 +1,7 @@
 package numinlist_test
 
 import (
+	"math"
 	"testing"
 
 	numinlist "github.com/ARMeeru/VisuAlGo/problems/1.NumInList"
@@ -72,6 +73,66 @@ func TestNumInList(t *testing.T) {
 			list:     []int{1, 2, 3, 3, 4, 5},
 			num:      3,
 			expected: true,
+		},
+		{
+			name:     "List with zero only, number present",
+			list:     []int{0},
+			num:      0,
+			expected: true,
+		},
+		{
+			name:     "List with zero only, number not present",
+			list:     []int{0},
+			num:      1,
+			expected: false,
+		},
+		{
+			name:     "List with all identical elements, number present",
+			list:     []int{5, 5, 5, 5, 5},
+			num:      5,
+			expected: true,
+		},
+		{
+			name:     "List with all identical elements, number not present",
+			list:     []int{5, 5, 5, 5, 5},
+			num:      3,
+			expected: false,
+		},
+		{
+			name:     "List with maximum and minimum integer values, number present",
+			list:     []int{math.MinInt64, 0, math.MaxInt64},
+			num:      math.MaxInt64,
+			expected: true,
+		},
+		{
+			name:     "List with maximum and minimum integer values, number not present",
+			list:     []int{math.MinInt64, 0, math.MaxInt64},
+			num:      1,
+			expected: false,
+		},
+		{
+			name:     "Very large list, number present",
+			list:     func() []int {
+				largeList := make([]int, 1000000)
+				for i := 0; i < 1000000; i++ {
+					largeList[i] = i
+				}
+				return largeList
+			}(),
+			num:      999999,
+			expected: true,
+		},
+		{
+			name:     "Very large list, number not present",
+			list:     func() []int {
+				largeList := make([]int, 1000000)
+				for i := 0; i < 1000000; i++ {
+					largeList[i] = i
+				}
+				return largeList
+			}(),
+			num:      1000001,
+			expected: false,
 		},
 	}
 
