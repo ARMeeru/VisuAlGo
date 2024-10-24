@@ -1,0 +1,9 @@
+```
+// Sum will sum up all of the numbers passed
+// in and return the result
+func Sum(numbers []int) int {
+	return 0
+}
+```
+
+[![](https://mermaid.ink/img/pako:eNpNkT1vgzAQQP_KyTOROiM1VRJIwtAOTZcWGNz4EqxiG5nzkAL_vQZDGg-WP9753fk6djYCWcyuljcVfCSFBj82-Ym4pRJWqzVs80w3jmKoZUtgLqCd-kbbloHdTtCuy1qgCgOEqqHbyxCA3Qj0n9j2kOTvSM5qeCof795MD6m3SJK8lr8IrVPwfIfSybDvMkLLCb3GGnetAPnZTzUq1ARS3_Wzdz-9vTc2gCHrHg75Roh5B2RG1-w5BM9jdKrFWPH4ag_HJfv_kOMUkuWeK1nEFFrFpfD_2Y33BfMpKSxY7JeC25-CFXrwHHdkTjd9ZjFZhxGb6lk2rhG-ykRy3xPF4guvW3-KQpKxr6FbU9Mi1nD9ZczCDH--G5NK?type=png)](https://mermaid.live/edit#pako:eNpNkT1vgzAQQP_KyTOROiM1VRJIwtAOTZcWGNz4EqxiG5nzkAL_vQZDGg-WP9753fk6djYCWcyuljcVfCSFBj82-Ym4pRJWqzVs80w3jmKoZUtgLqCd-kbbloHdTtCuy1qgCgOEqqHbyxCA3Qj0n9j2kOTvSM5qeCof795MD6m3SJK8lr8IrVPwfIfSybDvMkLLCb3GGnetAPnZTzUq1ARS3_Wzdz-9vTc2gCHrHg75Roh5B2RG1-w5BM9jdKrFWPH4ag_HJfv_kOMUkuWeK1nEFFrFpfD_2Y33BfMpKSxY7JeC25-CFXrwHHdkTjd9ZjFZhxGb6lk2rhG-ykRy3xPF4guvW3-KQpKxr6FbU9Mi1nD9ZczCDH--G5NK)
